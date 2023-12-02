@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/1/user/2458047).
-* Наставник: `Неизвестно`.
+* Наставник: `Андрей Изосимов https://github.com/AndrewChernigovsky`.
 
 ---
 
