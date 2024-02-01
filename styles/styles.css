@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("./../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,32 +10,15 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+  src: url("./../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
-  color: #000000;
 }
 
 .page-header {
@@ -43,8 +26,8 @@ body {
   background-color: #ffffff;
 }
 
-.navigation-link {
-  font-family: "PT Sans", sans-serif;
+.navigation, .navigation-link-current {
+  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
@@ -65,6 +48,11 @@ body {
   text-align: center;
 }
 
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .main-index {
   text-align: center;
 }
@@ -76,13 +64,22 @@ body {
   text-transform: uppercase;
 }
 
-.statement {
-font-size: 22px;
-font-weight: 400;
-line-height: 26px;
+.appeal-white {
+  color: #FFFFFF;
+  background-color: #000000; /* Для того чтобы были выдны слова, потом удалить */
 }
 
-.advantages-title {
+.email {
+  line-height: 24px;
+}
+
+.statement {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.privilege {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -90,28 +87,126 @@ line-height: 26px;
 }
 
 .transcript {
-font-size: 18px;
-font-weight: 400;
-line-height: 21px;
+  font-weight: 400;
 }
 
 .advantages-item-with-image{
-background-color: #82B3D3;
-color: #FFFFFF;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .on-background {
-background-color: #83B3D333;
+  background-color: #83B3D333;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+  color:#FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.button-blue-small {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .adress-phone {
-  font-family: "PT Sans", sans-serif;
   font-size: 40px;
-  font-style: normal;
   font-weight: 400;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
   color:#000000;
   text-transform: uppercase;
+}
+
+.hero-catalog {
+  color:#FFFFFF;
+  background-color: #000000; /* Для того чтобы были выдны слова, потом удалить */
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.catalog-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+option {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color:#000000;
+  text-decoration: none;
+}
+
+.control-input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+.button-light {
+  color:#FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-card-type {
+  text-align: left;
+}
+
+.hotel-card-price {
+  text-align: right;
+}
+
+.hotel-card-rating {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color:#FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #FFFFFF;
 }
