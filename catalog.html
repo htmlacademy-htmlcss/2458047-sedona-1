@@ -11,13 +11,13 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo">
+        <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70"
             alt="Логотип «гостиницы Седоны»">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О седоне</a>
@@ -120,15 +120,15 @@
                     <input class="range-input" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label-max">
-                    <input class="range-input" type="number" value="1500" name="max-price">
+                    <input class="range-input" type="number" value="9000" name="max-price">
                   </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 226px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -152,13 +152,13 @@
             <option value="popular">Сначала попульярные</option>
           </select>
           <div class="displaying-offers">
-            <button class="button-offers button-offers-current" type="button">
+            <button class="button-offers  button-offers-cards button-offers-current" type="button">
               <span class="visually-hidden">Показать карточки предложений</span>
             </button>
-            <button class="button-offers" type="button">
+            <button class="button-offers button-offers-large-cards" type="button">
               <span class="visually-hidden">Показать крупные карточки предложений</span>
             </button>
-            <button class="button-offers" type="button">
+            <button class="button-offers button-offers-list" type="button">
               <span class="visually-hidden">Показать список предложений</span>
             </button>
           </div>
@@ -167,112 +167,63 @@
           <ul class="hotels-list">
             <li class="hotels-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="image-amara" src="images/catalog/hotel-1.jpg" width="300" height="212"
+                <img class="image-card image-amara" src="images/catalog/hotel-1.jpg" width="300" height="212"
                   alt="Выход из ущелья к звёздному небу">
-              </a>
-              <div class="Description-hotel">
-                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-                </a>
+              </a>
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 4000 ₽</span>
                 <a class="button-brown button-brown-hotel-card" href="#">Подробнее</a>
                 <button class="button-blue button-blue-hotel-card" type="button">В избранное</button>
-                <span class="fake-button-rating">Рейтинг: 8,5
-                  <svg class="rating-star" width="18" height="17" viewBox="0 0 18 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <path id="Amara-Resort-star" class="star-repeat"
-                        d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                    </defs>
-                    <use xlink:href="#Amara-Resort-star" x="-60" y="0" />
-                    <use xlink:href="#Amara-Resort-star" x="-37" y="0" />
-                    <use xlink:href="#Amara-Resort-star" x="-14" y="0" />
-                    <use xlink:href="#Amara-Resort-star" x="9" y="0" />
-                  </svg>
-                </span>
-              </div>
+                <p class="star star-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <span class="fake-button-rating">Рейтинг: 8,5</span>
             </li>
             <li class="hotels-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="image-poco-diablo" src="images/catalog/hotel-2.jpg" width="300" height="212"
+                <img class="image-card image-poco-diablo" src="images/catalog/hotel-2.jpg" width="300" height="212"
                   alt="Скалистые горы с тёмными тучами на одной стороне и радугой на другой">
-              </a>
-              <div class="Description-hotel">
-                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-                </a>
+              </a>
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 5000 ₽</span>
                 <a class="button-brown button-brown-hotel-card" href="#">Подробнее</a>
                 <button class="button-green button-green-hotel-card" type="button">В избранном</button>
-                <span class="fake-button-rating">Рейтинг: 9,2
-                  <svg class="rating-star" width="18" height="17" viewBox="0 0 18 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <path id="Poco-Diablo-star" class="star-repeat"
-                        d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                    </defs>
-                    <use xlink:href="#Poco-Diablo-star" x="-60" y="0" />
-                    <use xlink:href="#Poco-Diablo-star" x="-37" y="0" />
-                    <use xlink:href="#Poco-Diablo-star" x="-14" y="0" />
-                    <use xlink:href="#Poco-Diablo-star" x="9" y="0" />
-                  </svg>
-                </span>
-              </div>
+                <p class="star star-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <span class="fake-button-rating">Рейтинг: 9,2</span>
             </li>
             <li class="hotels-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="image-quail" src="images/catalog/hotel-3.jpg" width="300" height="212"
+                <img class="image-card image-quail" src="images/catalog/hotel-3.jpg" width="300" height="212"
                   alt="Тропинка через деревья ведущая к вершине огромной горы">
-              </a>
-              <div class="Description-hotel">
-                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
-                </a>
+              </a>
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 2500 ₽</span>
                 <a class="button-brown button-brown-hotel-card" href="#">Подробнее</a>
                 <button class="button-blue button-blue-hotel-card" type="button">В избранное</button>
-                <span class="fake-button-rating">Рейтинг: 6,9
-                  <svg class="rating-star" width="18" height="17" viewBox="0 0 18 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <path id="Quail-Inn-star" class="star-repeat"
-                        d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                    </defs>
-                    <use xlink:href="#Quail-Inn-star" x="-60" y="0" />
-                    <use xlink:href="#Quail-Inn-star" x="-37" y="0" />
-                    <use xlink:href="#Quail-Inn-star" x="-14" y="0" />
-                  </svg>
-                </span>
-              </div>
+                <p class="star star-3">
+                  <span class="visually-hidden">3 звезды</span>
+                </p>
+                <span class="fake-button-rating">Рейтинг: 6,9</span>
             </li>
             <li class="hotels-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="image-greentree" src="images/catalog/hotel-4.jpg" width="300" height="212"
+                <img class="image-card image-greentree" src="images/catalog/hotel-4.jpg" width="300" height="212"
                   alt="Большая скала на фоне тёмного звёздного неба">
-              </a>
-              <div class="Description-hotel">
-                <a class="hotel-card-title-link" href="#">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
-                </a>
+              </a>
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 1500 ₽</span>
                 <a class="button-brown button-brown-hotel-card" href="#">Подробнее</a>
                 <button class="button-blue button-blue-hotel-card" type="button">В избранное</button>
-                <span class="fake-button-rating">Рейтинг: 5,0
-                  <svg class="rating-star" width="18" height="17" viewBox="0 0 18 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <path id="GreenTree-star" class="star-repeat"
-                        d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
-                    </defs>
-                    <use xlink:href="#GreenTree-star" x="-60" y="0" />
-                    <use xlink:href="#GreenTree-star" x="-37" y="0" />
-                  </svg>
-                </span>
-              </div>
+                <p class="star star-2">
+                  <span class="visually-hidden">2 звезды</span>
+                </p>
+                <span class="fake-button-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
         </div>
