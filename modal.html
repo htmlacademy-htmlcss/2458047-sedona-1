@@ -121,7 +121,7 @@
           <h2 class="search-tittle appeal">Заинтересовались?</h2>
           <p class="search-description statement">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
-          <a class="button-brown button-brown-big" href="modal.html">Поиск гостиницы В седоне</a>
+          <a class="button-brown button-brown-big" href="catalog.html">Поиск гостиницы В седоне</a>
         </section>
         <section class="subscribe-custom">
           <div class="appeal-white">
@@ -199,6 +199,89 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-close-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            width="15" height="15" fill="none" viewBox="0 0 15 15">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M14.5 1.78 13.2.5l-5.7 5.7L1.77.5.5 1.79l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group hotel-search-date">
+              <label class="form-label" for="hotel-search-date-entry">
+                Дата Заезда:</label>
+              <input class="field field-hotel-search-date" type="text" id="hotel-search-date-entry"
+                name="hotel-search-date-entry" placeholder="Укажите дату">
+              <span class="error-message">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group hotel-search-date">
+              <label class="form-label" for="hotel-search-date-departure">
+                Дата Выезда:</label>
+              <input class="field field-hotel-search-date" type="text" id="hotel-search-date-departure"
+                name="hotel-search-date-departure" placeholder="Укажите дату">
+              <span class="true-message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="field-group hotel-search-adult">
+              <label class="form-label" for="hotel-search-adult">
+                Взрослые:</label>
+              <input class="field field-hotel-search-adult" type="number" id="hotel-search-adult"
+                name="hotel-search-adult" placeholder="2">
+              <button class="modal-minus-button" type="button">
+                <span class="visually-hidden">убрать одного взрослого</span>
+                <svg class="icon-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="2" fill="none" viewBox="0 0 15 2">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0v2h14V0H.4Z" />
+                </svg>
+              </button>
+              <button class="modal-plus-button" type="button">
+                <span class="visually-hidden">добавить одного взрослого</span>
+                <svg class="icon-plus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" fill="none" viewBox="0 0 14 14">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+              </button>
+            </p>
+            <p class="field-group hotel-search-child">
+              <label class="form-label" for="hotel-search-adult">
+                Дети:</label>
+              <input class="field field-hotel-search-child" type="number" id="hotel-search-child"
+                name="hotel-search-child" placeholder="2">
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="3" height="12" fill="none" viewBox="0 0 3 12">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <button class="modal-minus-button" type="button">
+                <span class="visually-hidden">убрать одного ребёнка</span>
+                <svg class="icon-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="2" fill="none" viewBox="0 0 15 2">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0v2h14V0H.4Z" />
+                </svg>
+              </button>
+              <button class="modal-plus-button" type="button">
+                <span class="visually-hidden">добавить одного ребёнка</span>
+                <svg class="icon-plus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" fill="none" viewBox="0 0 14 14">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+              </button>
+            </p>
+            <button class="button-blue button-modal" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
