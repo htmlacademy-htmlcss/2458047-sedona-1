@@ -717,10 +717,9 @@ body {
   padding: 0;
   padding-top: 96px;
   margin: 0 auto;
-  background-image: url("../images/home-page/subscribe.jpg");
+  background-image: url("../images/home-page/subscribe-form.jpg");
   background-size: cover;
   background-color: #429bd7;
-
   background-repeat: no-repeat;
 }
 
