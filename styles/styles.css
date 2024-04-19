@@ -502,13 +502,6 @@ body {
   fill: #000000;
 }
 
-.breadcrumbs-item:nth-child(1) {
-  background-image: url("../images/catalog/breadcrumbs-home.svg");
-  background-repeat: no-repeat;
-  background-size: 13px 12px;
-  background-position: center left;
-}
-
 .select-control {
   background-color: #FFFFFF;
   background-image: url("../images/catalog/sorting-arrow.svg");
@@ -548,7 +541,7 @@ body {
   min-height: 485px;
   background-image: url("../images/home-page/hero-background.jpg");
   background-size: cover;
-  background-color: #82B3D3;
+  background-color: #429bd7;
   background-repeat: no-repeat;
 }
 
@@ -724,9 +717,10 @@ body {
   padding: 0;
   padding-top: 96px;
   margin: 0 auto;
-  background-image: url("../images/home-page/Subscribe.jpg");
+  background-image: url("../images/home-page/subscribe.jpg");
   background-size: cover;
-  background-color: #82B3D3;
+  background-color: #429bd7;
+
   background-repeat: no-repeat;
 }
 
@@ -941,7 +935,7 @@ body {
   line-height: 23px;
   background-image: url("../images/catalog/filter.png");
   background-size: cover;
-  background-color: #82B3D3;
+  background-color: #429bd7;
   background-repeat: no-repeat;
   margin: 0 auto;
   max-width: 1200px;
@@ -963,16 +957,20 @@ body {
   line-height: 78px;
 }
 
-.breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+.breadcrumbs-item {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -988,6 +986,12 @@ body {
   padding-left: 28px;
 }
 
+.home-icon {
+  position: relative;
+  left: -1px;
+  fill: #ffffff;
+}
+
 .breadcrumbs-link-home {
   display: block;
   width: 13px;
@@ -995,19 +999,18 @@ body {
 }
 
 .breadcrumbs-link {
-  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.breadcrumbs-item:not(:last-child):focus {
-  color: #FFFFFF;
+.breadcrumbs-link:focus,
+.breadcrumbs-link:hover {
+  opacity: 60%;
+  outline: none;
 }
 
-.breadcrumbs-item:not(:last-child):hover {
-  color: #FFFFFF99;
-}
-
-.breadcrumbs-item:not(:last-child):active {
-  color: #FFFFFF4D;
+.breadcrumbs-link:active {
+  opacity: 30%;
 }
 
 .catalog-filter {
@@ -1461,10 +1464,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .hotel-card-type {
   grid-column: 1 / 2;
   text-align: left;
+  color: #333333;
 }
 
 .hotel-card-price {
   text-align: right;
+  color: #333333;
 }
 
 .modal-container {
